@@ -6,6 +6,7 @@ from users.models import User
 from users.serializers import UserSerializer
 from users.permissions import IsUserOwner
 
+
 class UserViewSet(viewsets.ModelViewSet):
     lookup_field = 'username'
     queryset = User.objects.all()
